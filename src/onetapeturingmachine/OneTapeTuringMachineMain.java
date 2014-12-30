@@ -4,6 +4,8 @@
  */
 package onetapeturingmachine;
 
+import java.io.File;
+
 /**
  *
  * @author Thomas De Praetere
@@ -14,6 +16,8 @@ public class OneTapeTuringMachineMain {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        OneTapeTuringMachine M = new OneTapeTuringMachine("");
+        M.read(new File("M.txt"));
+        M.execute();
     }
 }

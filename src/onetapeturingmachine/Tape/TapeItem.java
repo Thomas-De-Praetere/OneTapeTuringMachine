@@ -10,28 +10,28 @@ package onetapeturingmachine.Tape;
  */
 public class TapeItem<T> {
 
-    private TapeItem<T> previous;
-    private TapeItem<T> next;
+    private TapeItem<T> L;
+    private TapeItem<T> R;
     private T item;
 
     public TapeItem(T item) {
         this.item = item;
     }
 
-    public TapeItem<T> getPrevious() {
-        return previous;
+    public TapeItem<T> getL() {
+        return L;
     }
 
-    public void setPrevious(TapeItem<T> previous) {
-        this.previous = previous;
+    public void setL(TapeItem<T> L) {
+        this.L = L;
     }
 
-    public TapeItem<T> getNext() {
-        return next;
+    public TapeItem<T> getR() {
+        return R;
     }
 
-    public void setNext(TapeItem<T> next) {
-        this.next = next;
+    public void setR(TapeItem<T> R) {
+        this.R = R;
     }
 
     public T getItem() {
