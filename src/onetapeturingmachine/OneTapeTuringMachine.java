@@ -70,7 +70,7 @@ public class OneTapeTuringMachine {
         }
     }
     //Eerst states dan startstate dan endstates dan alphabet gescheiden door :
-    //States : startstate : endstate : alphabet
+    //States : startstate : endstate : alphabet : Start
 
     private void initialize(String[] split) {
         int i = 0;
@@ -94,6 +94,14 @@ public class OneTapeTuringMachine {
             Alphabeth.add(split[i]);
             i++;
         }
+        i++;
+        int j = i;
+        String[] start = new String[split.length - i - 1];
+        while (!split[i].equals(":") && i < split.length) {
+            start[i - j] = split[i];
+            i++;
+        }
+        tape.setStart(start);
     }
 
     //Delta van vorm z a z a d
