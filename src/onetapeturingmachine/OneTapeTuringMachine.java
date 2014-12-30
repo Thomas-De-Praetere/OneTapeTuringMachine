@@ -53,6 +53,7 @@ public class OneTapeTuringMachine {
     }
 
     public void execute() {
+        tape.print(sep);
         while (!EndStates.contains(state)) {
             step();
             tape.print(sep);
@@ -96,8 +97,8 @@ public class OneTapeTuringMachine {
         }
         i++;
         int j = i;
-        String[] start = new String[split.length - i - 1];
-        while (!split[i].equals(":") && i < split.length) {
+        String[] start = new String[split.length - i];
+        while (i < split.length && !split[i].equals(":")) {
             start[i - j] = split[i];
             i++;
         }

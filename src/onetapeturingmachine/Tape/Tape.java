@@ -73,9 +73,14 @@ public class Tape {
             if (l == head) {
                 System.out.print("v" + sep);
             } else {
-                System.out.println(" " + sep);
+                System.out.print(" " + sep);
             }
             l = l.getR();
+        }
+        if (l == head) {
+            System.out.print("v" + sep);
+        } else {
+            System.out.print(" " + sep);
         }
         System.out.println("");
         l = n;
@@ -83,6 +88,7 @@ public class Tape {
             System.out.print(l.getItem() + sep);
             l = l.getR();
         }
+        System.out.print(l.getItem() + sep);
         System.out.println("");
     }
 }
