@@ -1,0 +1,13 @@
+zr za zl ze : zr : ze : 0 1 # B : 1 0 1 0 1 0 1 1 1 0 1 1 0 0 0 1 0 1 0 0 1 0 1 1 1 0 0 0 1 0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
+zr 0 zr 0 R
+zr 1 zr 1 R
+zr # za # L
+zr B za B L
+za 0 zl 1 L
+za 1 za 0 L
+za # ze 1 N
+za B ze 1 N
+zl 0 zl 0 L
+zl 1 zl 1 L
+zl # ze # R
+zl B ze B R
